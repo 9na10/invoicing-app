@@ -64,6 +64,44 @@
       </fieldset>
     </form>
 
+    <div class="clearfix"></div>
+
+    <h2 class="invoicePositions">INVOICE POSITIONS</h2>
+    <table style="width:60%">
+      <tr>
+        <th>number</th>
+        <th>name of product/service</th>
+        <th>unit</th>
+        <th>quantity</th>
+        <th>unit price - net</th>
+        <th>net</th>
+        <th colspan="2">tax rate</th>
+        <th>gross</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>IT service</td>
+        <td>
+          <select>
+            <option value="hour">hour</option>
+            <option value="service">service</option>
+          </select>
+        </td>
+        <td><input type="number" class="quantity"></td>
+        <td><input type="number" class="net"></td>
+        <td>netto</td>
+        <td>
+          <select>
+            <option value="23%">23%</option>
+            <option value="8%">8%</option>
+            <option value="5%">5%</option>
+            <option value="untaxed">untaxed</option>
+          </select>
+        </td>
+        <td>suma</td>
+        <td>suma</td>
+      </tr>
+    </table>
 
 
 

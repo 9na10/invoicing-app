@@ -1,15 +1,35 @@
 <!DOCTYPE html>
-<html ng-app="invoicingApp">
+<html>
   <head>
+    <meta charset="utf-8">
     <title>invoicing app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="main.css">
   </head>
-  <body>
-    <div>
-      <label>Name:</label>
-      <input type="text" ng-model="yourName" placeholder="Enter a name here">
-      <h1>Hello {{yourName}}!</h1>
-    </div>
+  <body ng-app="invoicingApp">
+    <form action="" method="post" ng-controller="InvoiceFormSetting as invoice"
+    class="invoiceFormSetting" novalidate>
+      <fieldset>
+        <legend>Company's data:</legend>
+        <label for="companyName">company name:</label>
+        <input type="text" name="companyName" id="companyName" placeholder="please write the entire name ">
+
+        <label for="companyAdress">address:</label>
+        <input type="text" name="companyStreet" id="companyAdress" placeholder="street name, number">
+        <input type="text" name="companyLocality" placeholder="locality name, zip code, country">
+        <input type="text" name="companyNIP" placeholder="number NIP">
+
+        <label for="companyAdress">account number:</label>
+        <input type="text" name="companyAccountNumber" id="companyAccountNumber" placeholder="account number">
+
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+
+
+
+
+
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.0-rc.2/angular.min.js"></script>
     <script src="angular-route.min.js"></script>
     <script src="main.js"></script>

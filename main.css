@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+.invoiceFormSetting {
+  width: 25%;
+}
+.invoiceFormSetting label {
+  display: block;
+  padding-top: 20px;
+}
+.invoiceFormSetting input:not([type='submit']) {
+  padding: 10px;
+  margin: 3px 0 3px 0;
+  width: 100%;
+}

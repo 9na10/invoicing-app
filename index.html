@@ -9,19 +9,57 @@
   <body ng-app="invoicingApp">
     <form action="" method="post" ng-controller="InvoiceFormSetting as invoice"
     class="invoiceFormSetting" novalidate>
+      <fieldset class="displayData">
+        <legend>Company data:</legend>
+        <h1>{{companyName}}</h1>
+        <p>{{companyStreet}}</p>
+        <p>{{companyLocality}}</p>
+        <p>{{companyNIP}}</p>
+        <p>{{companyAccount}}</p>
+      </fieldset>
+
       <fieldset>
-        <legend>Company's data:</legend>
+        <legend>Locality, date:</legend>
+        <input type="text" name="locality" placeholder="please write locality">
+        <label for="date">date of issue:</label>
+        <input type="text" name="dateOfIssue" id="dateOfIssue" placeholder="please write date of issue">
+        <label for="saleDate">sale date:</label>
+        <input type="text" name="saledate"id="saleDate" placeholder="please write sale date">
+        <input type="submit" value="Submit">
+      </fieldset>
+
+      <fieldset>
+        <legend>Seller data:</legend>
         <label for="companyName">company name:</label>
-        <input type="text" name="companyName" id="companyName" placeholder="please write the entire name ">
-
+        <input type="text" name="companyName" id="companyName"
+        placeholder="please write the entire name " ng-model="companyName">
         <label for="companyAdress">address:</label>
-        <input type="text" name="companyStreet" id="companyAdress" placeholder="street name, number">
-        <input type="text" name="companyLocality" placeholder="locality name, zip code, country">
-        <input type="text" name="companyNIP" placeholder="number NIP">
-
+        <input type="text" name="companyStreet" id="companyAdress"
+        placeholder="street name, number" ng-model="companyStreet">
+        <input type="text" name="companyLocality"
+        placeholder="locality name, zip code, country" ng-model="companyLocality">
+        <input type="text" name="companyNIP" placeholder="number NIP"
+        ng-model="companyNIP">
         <label for="companyAdress">account number:</label>
-        <input type="text" name="companyAccountNumber" id="companyAccountNumber" placeholder="account number">
+        <input type="text" name="companyAccountNumber" id="companyAccountNumber"
+        placeholder="please write account number" ng-model="companyAccount">
+        <input type="submit" value="Submit">
+      </fieldset>
 
+      <fieldset>
+        <legend>Buyer data:</legend>
+        <label for="companyName">company name:</label>
+        <input type="text" name="companyName" id="companyName"
+        placeholder="please write the entire name ">
+        <label for="companyAdress">address:</label>
+        <input type="text" name="companyStreet" id="companyAdress"
+        placeholder="street name, number">
+        <input type="text" name="companyLocality"
+         placeholder="locality name, zip code, country">
+        <input type="text" name="companyNIP" placeholder="number NIP">
+        <label for="companyAdress">account number:</label>
+        <input type="text" name="companyAccountNumber" id="companyAccountNumber"
+        placeholder="please write account number">
         <input type="submit" value="Submit">
       </fieldset>
     </form>

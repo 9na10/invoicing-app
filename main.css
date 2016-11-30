@@ -5,15 +5,38 @@ body {
   margin-top: 30px;
   margin-left: 10px;
 }
+.displayData {
+  border: 1px solid #ccc;
+  width: 40%;
+  margin-bottom: 10px;
+  height: 150px;
+}
+.displayData h1 {
+  font-size: 16px;
+  margin: 4px;
+  padding: 0;
+}
+.displayData p {
+  margin: 4px;
+  padding: 0;
+}
 .invoiceFormSetting {
-  width: 25%;
+  font-size: 14px;
 }
 .invoiceFormSetting label {
   display: block;
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .invoiceFormSetting input:not([type='submit']) {
   padding: 10px;
   margin: 3px 0 3px 0;
   width: 100%;
+}
+.invoiceFormSetting legend {
+  font-size: 1.5em;
+}
+.invoiceFormSetting fieldset {
+  width: 40%;
+  float: left;
+  margin-right: 60px;
 }
